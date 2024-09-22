@@ -1,0 +1,258 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+     width:100%;
+     height:100%;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     background-color:  #8CC461;
+     font-family: system-ui;
+     
+
+}
+.score-con{
+    max-width: 100%;
+    width:700px;
+    border:4px solid white;
+    margin-top:3rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: centre;
+    padding:23px 35px;
+    height: 30%;
+}
+.logo{
+    font-size: 36px;
+
+}
+.cscore{
+    height: 92%;
+    width: 17%;
+    padding: 10px 22px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+}
+.cscore p{
+    color: black;
+    font-size: 18px;
+  
+
+}
+.cscore span{
+    color: black;
+    font-size: 36px;
+    font-weight: 700;
+ 
+}
+.yscore{
+    height: 92%;
+    width: 17%;
+    padding: 10px 22px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+}
+.yscore p{
+    color: black;
+    font-size: 18px;
+}
+.yscore span{
+    color: black;
+    font-size: 36px;
+    font-weight: 700;
+}
+.game-con{
+    width: 100%;
+    min-height: 69vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.info{
+    width: 700px;
+    min-height: 7vh;
+    font-size: 1.2rem;
+    margin: 1rem 0 0 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+.option{
+    max-width: 100%;
+    width:700px;
+    min-height: 30vh;
+    display: grid;
+    place-content: center;
+    position: relative;
+    
+    
+}
+.con{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 18px;
+    cursor: pointer;
+
+}
+.computer{
+   position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 18px;
+    display: none;
+    
+
+}
+.sci-con{
+    background-color:#BD00FF;
+    right:8rem;
+    top:8%;
+}
+.rock-con{
+    background-color:#0074B6;
+    left:17rem;
+    top:55%;
+    
+}
+.paper-con{
+    background-color :#FFA943;
+    left:8rem;
+    top:8%
+}
+.item{
+    background: #eee;
+    height: 100%;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+
+  
+
+}
+.user,
+.machine{
+    opacity: 0;
+
+}
+.btn-div{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding:1rem 2rem 1rem 10rem;
+}
+.btn-rule{
+    padding: 8px 30px;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: 16px;
+    letter-spacing: 3px;
+    color: white;
+    cursor: pointer;
+}    
+
+.rule-modal{
+    position: fixed;
+    width: 100%;
+    height:100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top:0;
+    display: none;
+}
+.rule-modal::before{
+    position: absolute;
+    content: "";
+    background: #000;
+    opacity: 0.6;
+    width:100%;
+    height:100%
+}
+.rule-img div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    transform: translateY(-200%);
+    transition: all 0.4s ease;
+}
+.close{
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.win-modal{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    top:0;
+    text-align: center;
+    display:none ;
+}
+.win-modal::before{
+    position: revert-layer;
+    content: "";
+    background: #000;
+    opacity: 0.6;
+    width:100%;
+    height:100%
+}
+.winner,.play{
+    z-index: 1;
+}
+.winner{
+    color: white;
+    padding-bottom: 1rem;
+}
+.wap{
+    color: white;
+    padding-bottom: 1rem;
+}
+.play{
+    background: #eee;
+    letter-spacing: 3px;
+    color: red;
+    outline: none;
+    cursor: pointer;
+    padding:8px 20px;
+    font-size: 17px;
+    border: none;
+    border-radius: 5px;
+
+}
+
+.show{
+    left:8rem;
+    top:8%
+    
+
+}
+.right{
+    left: 27.5;
+    top: 3%;
+    
+}
+
+
